@@ -1,4 +1,4 @@
-package AbstractFactory;
+package CSCI4320GroupProject;
 
 public class checkUser {
     private String[][] userCredentials;
