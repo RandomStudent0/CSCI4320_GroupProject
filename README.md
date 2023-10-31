@@ -1,13 +1,11 @@
-"# CSCI4320_GroupProject" 
+# CSCI4320_GroupProject" 
 
+Progress so far:
+Classes: IOTController, Login, Client
+Methods: CreateNewIOT(); deleteIOT(); editIOT(); listIOTs(); enableOrDisable(); firstPage(); registar(); loginUser();
 
-Hi everyone, before commits, please create a new branch.
-!!!!!Also, we might not actually need it. If everyone agrees, we can just only use the main branch for coding.!!!!!
-Using the github website, click on:
-Branch -> New Branch -> Firstname-Lastname
-(Remove this once everyone has done it and before we submit it)
-
-Then, we will use git checkout branch_name to checkout our branch.
-
-However, if that does not work, we will use git checkout -b Firstname-Lastname to create the new branch.
-Then, we will do git checkout -b branchname to get into it. Then, do git pull origin branchname to get the code from the main branch.
+Notes: 
+enableOrDisable(); method needs to keep track, and display the state later
+enterIOT(); method needs to be created to enter IOTs. Idea: Use enterIOT(); method and listIOTs(); method from the first switch case.
+Then, once user types the name of the IOT, they will be entered to either classes uses switch cases 1, 2, 3, 4, 5: exit, where 1-4 are the IOT names.
+Each class will be a seperate IOT and function seperately. It can also go to the first page, and exit.
