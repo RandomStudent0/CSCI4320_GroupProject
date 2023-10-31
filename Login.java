@@ -23,6 +23,7 @@ public class Login {
 
             if (validUser) {
                 System.out.println("Login Success!");
+                IOTController.startIOTPage(); //Goes to login page
             } else {
                 System.out.println("Login Failed! Please try again.");
             }
