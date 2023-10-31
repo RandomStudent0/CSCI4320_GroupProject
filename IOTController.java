@@ -141,8 +141,7 @@ public class IOTController {
             System.out.println("4. List IOTs");
             System.out.println("5. Enable or disable all IOTs");
             System.out.println("6. Exit");
-            System.out.println("7. Enable/Disable all IOTs");
-            //System.out.println("8. Choose an IOT to enter");
+            //System.out.println("7. Choose an IOT to enter");
             //Enter IOT
 
             int choice = sc.nextInt();
