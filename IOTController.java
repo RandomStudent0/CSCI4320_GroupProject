@@ -170,6 +170,7 @@ public class IOTController {
                 case 7:
                     System.out.println("Enable or disable all IOTs");
                     enableOrDisable();
+                    break;
                     //new Method to go to and println enable/disable all IOTs, keep track too.
                     //currently, enable and disable is hard coded.
                 //case 8:
@@ -177,7 +178,7 @@ public class IOTController {
                     //listIOTs();
                     //pull list of IOTs
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Invalid IOT choice. Please try again.");
                     break;
             } //End switches
         } //End loop
