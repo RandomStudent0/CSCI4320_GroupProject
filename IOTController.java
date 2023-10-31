@@ -65,9 +65,10 @@ public class IOTController {
             System.out.println("1. Create new IOT");
             System.out.println("2. Delete an IOT");
             System.out.println("3. Edit an IOT");
-            System.out.println("4. Enter an IOT - List of IOTs");
+            System.out.println("4. List IOTs");
             System.out.println("5. Enable all IOTs");
             System.out.println("6. Exit");
+            //Not sure how to enter IOT
 
             int choice = sc.nextInt();
 
@@ -76,37 +77,87 @@ public class IOTController {
                     createNewIOT(sc);
                     break;
                 case 2:
-                    // Implement the logic for deleting an IOT
+                    deleteIOT(sc);
                     break;
                 case 3:
-                    // Implement the logic for editing an IOT
+                    editIOT(sc);
                     break;
                 case 4:
-                    // Implement the logic for listing IOTs and choosing one
+                    listIOTs();
                     break;
                 case 5:
-                    // Implement the logic for enabling all IOTs
+                    //Not Done
+                    //enableAllIOTs();
                     break;
                 case 6:
                     System.out.println("Exiting IOT Page");
                     running = false;
                     break;
+                    //Case 7 - Enter IOT?
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
-            }
-        }
-    }
+            } //End switches
+        } //End loop
+    } //End method
 
     public static void createNewIOT(Scanner newIOT) {
-        System.out.println("Enter the name of the new IOT:");
+        System.out.println("Enter the name of the new IOT: ");
         String iotName = newIOT.next();
 
         if (iotList.contains(iotName)) {
-            System.out.println("IOT with the same name already exists. Please choose a different name.");
+            System.out.println("This IOT name already exists, please choose a different name.");
         } else {
             iotList.add(iotName);
-            System.out.println("New IOT '" + iotName + "' created.");
+            System.out.println("New IOT " + iotName + " has been created.");
         }
-    }
-}
+    } //End method
+
+    public static void deleteIOT(Scanner sc) {
+        System.out.println("Enter the name of the IOT to delete:");
+        String iotName = sc.next();
+
+        if (iotList.remove(iotName)) {
+            System.out.println("IOT '" + iotName + "' deleted.");
+        } else {
+            System.out.println("IOT not found. Cannot delete.");
+        }
+    } //End method
+
+
+
+    public static void editIOT(Scanner sc) {
+        System.out.println("Enter the name of the IOT you want to edit:");
+        String oldIOTName = sc.next();
+
+        if (iotList.contains(oldIOTName)) {
+            System.out.println("Enter the new name for the IOT:");
+            String newIOTName = sc.next();
+
+            if (iotList.contains(newIOTName)) {
+                System.out.println("This IOT name already exists, please choose a different name.");
+            } else {
+                int index = iotList.indexOf(oldIOTName);
+                iotList.set(index, newIOTName);
+                System.out.println("IOT " + oldIOTName + " has been changed to " + newIOTName + ".");
+            }
+        } else {
+            System.out.println("IOT not found!");
+        }
+    } //End method
+
+    //List IOT
+    public static void listIOTs() {
+        System.out.println("List of IOTs:");
+        for (String iot : iotList) {
+            System.out.println(iot);
+        }
+    } //End method
+
+    //Not Done Yet
+    public static void enableAllIOTs() {
+        System.out.println("Enabling all IOTs.");
+        // Figure out how to enable all IOTs
+    } //End method
+
+} //End class
