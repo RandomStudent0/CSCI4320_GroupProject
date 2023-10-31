@@ -162,16 +162,13 @@ public class IOTController {
                 case 5:
                     enableOrDisable();
                     break;
+                //new Method to go to and println enable/disable all IOTs, keep track too.
+                //currently, enable and disable is hard coded.
                 case 6:
                     System.out.println("Exiting IOT Page");
                     running = false;
                     break;
-                case 7:
-                    System.out.println("Enable or disable all IOTs");
-                    enableOrDisable();
-                    break;
-                    //new Method to go to and println enable/disable all IOTs, keep track too.
-                    //currently, enable and disable is hard coded.
+
                 //case 8:
                   //  System.out.println("Pick an IOT from the list to enter: ");
                     //listIOTs();
@@ -226,7 +223,6 @@ public class IOTController {
         }
     } //End method
 
-    //List IOT
     public static void listIOTs() {
         System.out.println("List of IOTs:");
         for (String iot : iotList) {
