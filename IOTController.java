@@ -138,9 +138,13 @@ public class IOTController {
             System.out.println("1. Create new IOT");
             System.out.println("2. Delete an IOT");
             System.out.println("3. Edit an IOT");
+            //For 1-3, not sure if we should include a list or make them into a switch for 1.2.3, and include the list
             System.out.println("4. List IOTs");
-            System.out.println("5. Enable or disable all IOTs");
-            System.out.println("6. Exit");
+            //Not sure if we should remove this or add enter IOT through it
+            //For example, "4. Choose IOTs -> List of IOTs -> Exit or enter that IOT"
+            System.out.println("5. Enter IOTs");
+            System.out.println("6. Enable or disable all IOTs");
+            System.out.println("7. Exit");
             //System.out.println("7. Choose an IOT to enter");
             //Enter IOT
 
@@ -151,28 +155,31 @@ public class IOTController {
                     createNewIOT(sc);
                     break;
                 case 2:
+                    listIOTs();
                     deleteIOT(sc);
                     break;
                 case 3:
+                    listIOTs();
                     editIOT(sc);
                     break;
                 case 4:
                     listIOTs();
                     break;
                 case 5:
+                    System.out.println("Pick an IOT from the list to enter: ");
+                    listIOTs();
+                    enterIOTs(); //function here
+                    break;
+                case 6:
                     enableOrDisable();
                     break;
                 //new Method to go to and println enable/disable all IOTs, keep track too.
                 //currently, enable and disable is hard coded.
-                case 6:
+                case 7:
                     System.out.println("Exiting IOT Page");
                     running = false;
                     break;
 
-                //case 8:
-                  //  System.out.println("Pick an IOT from the list to enter: ");
-                    //listIOTs();
-                    //pull list of IOTs
                 default:
                     System.out.println("Invalid IOT choice. Please try again.");
                     break;
@@ -230,6 +237,17 @@ public class IOTController {
         }
     } //End method
 
+    public static void enterIOTs(){
+        //Not finished yet
+        //Implement logic here
+        //System.out.println("Enter which IOT you would like to enter: ");
+        //String enterIOT = sc.nextLine();
+
+        //System.out.println("You have entered the + " + IOTNAMEHERE + "IOT.");
+        //1. Ask user to input which IOT they would like to enterIOTs();
+        //2. User has entered "Pull from list, if there then display name if not then display not found! loop again"
+    }
+
     //Not Done Yet
     public static void enableOrDisable() {
         Scanner sc = new Scanner(System.in);
@@ -255,7 +273,5 @@ public class IOTController {
             } //End switches
 
     } //End method
-
-
 
 } //End class
