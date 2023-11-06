@@ -168,7 +168,8 @@ public class IOTController {
                 case 5:
                     System.out.println("Pick an IOT from the list to enter: ");
                     listIOTs();
-                    enterIOTs(); //function here
+                    //enterIOTs(); //function here
+                    enterIOT(sc);
                     break;
                 case 6:
                     enableOrDisable();
@@ -237,6 +238,22 @@ public class IOTController {
         }
     } //End method
 
+    //Testing enterIOT
+    public static void enterIOT(Scanner sc){
+        System.out.println("Choose an IOT to enter");
+        String enterIOTName = sc.next();
+
+        if (iotList.contains(enterIOTName)) {
+            //Also implement logic here for what is inside IOT?
+            System.out.println("You have entered the IOT: " + enterIOTName + "!");
+        } else {
+            System.out.println("IOT not found!");
+        }
+
+    }
+    //Above for testing only!
+
+    //This is the logic for the method above, discard the bottom later.
     public static void enterIOTs(){
         //Not finished yet
         //Implement logic here
