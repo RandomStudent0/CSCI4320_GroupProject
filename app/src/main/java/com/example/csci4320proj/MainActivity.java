@@ -1,4 +1,4 @@
-
+/*
 package com.example.csci4320proj;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-/*
+*/
 
 //Remove the above later, it is code that works
 package com.example.csci4320proj;
@@ -85,13 +85,14 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.editTextPassword);
 
         registerButton = findViewById(R.id.buttonRegister);
-
-
+/*
+        //REGISTER REMOVE
         // Set onClickListener for the login button
         loginButton.setOnClickListener(new View.OnClickListener() {
             //What happens when the button is clicked
             @Override
             public void onClick(View view) {
+                String newU
                 String validPassword = "pass";
                 String enteredPassword = passwordEditText.getText().toString();
 
@@ -109,9 +110,29 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
+        });*/
+
+        //REGISTER REMOIVE
+
+
+        // Set onClickListener for the login button
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            //What happens when the button is clicked
+            @Override
+            public void onClick(View view) {
+                if (!users.containsKey(usernameEditText)) {
+                    Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (users.get(usernameEditText).equals(passwordEditText)) {
+                        Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
+                        Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
+                    }
+
+                }
+            }
         });
 
     }
 }
 
-*/
