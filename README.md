@@ -4,7 +4,14 @@ Hi everyone,
 This is the android studio version of the java code.
 I am currently converting the java code to work with functions of android.
 
-**Android Studio Notes**
+**How to add files to Android Studio**
+```
+1. Save the files in this current branch (Allen-Nguyen-AndroidStudio) into one of your folders
+2. Open Android Studio and open a new project and pick that new folder from above
+```
+
+
+**Android Studio use app**
 ```
 You don't need to download an APK, you just need to run the emulator and press play
 Settings -> Live Edit -> Push Edits Automatically = Live edits 
