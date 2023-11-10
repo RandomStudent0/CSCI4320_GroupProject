@@ -137,10 +137,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static HashMap<String, String> users = new HashMap<String, String>();
+    private static List<String> iotList = new ArrayList<>();
+
+    public static List<String> getIotList() {
+        return iotList;
+    }
     private Button loginButton;
     private Button registerButton;
     private EditText passwordEditText;

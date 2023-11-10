@@ -26,6 +26,7 @@
         <activity android:name=".MainIOTPage"></activity>
         <activity android:name=".Register"></activity>
         <activity android:name=".NewIOT"></activity>
+        <activity android:name=".DeleteIOT"></activity>
 
     </application>
 

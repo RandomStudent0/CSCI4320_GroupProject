@@ -11,8 +11,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewIOT extends AppCompatActivity {
-    private static List<String> iotList = new ArrayList<>();
+public class NewIOT extends MainIOTPage {
+
     private Button createIOTButton;
     private EditText editNewIOTName;
     @Override
@@ -28,6 +28,7 @@ public class NewIOT extends AppCompatActivity {
         createIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                List<String> iotList = MainActivity.getIotList();
                 String iotName = editNewIOTName.getText().toString();
 
                 if(iotList.contains(iotName)){
@@ -35,9 +36,10 @@ public class NewIOT extends AppCompatActivity {
                 } else {
                     iotList.add(iotName);
                     Toast.makeText(NewIOT.this, "New IOT: " + iotName + " has been created.", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(NewIOT.this, MainIOTPage.class);
+                    startActivity(intent);
                 }
-                Intent intent = new Intent(NewIOT.this, MainIOTPage.class);
-                startActivity(intent);
+
             }
         });
 

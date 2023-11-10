@@ -35,6 +35,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainIOTPage extends AppCompatActivity {
     private static List<String> iotList = new ArrayList<>();
     private Button newIOTButton;
+    private Button deleteIOTButton;
 
 
 
@@ -46,12 +47,20 @@ public class MainIOTPage extends AppCompatActivity {
 
 
         newIOTButton = findViewById(R.id.newIOT);
-
+        deleteIOTButton = findViewById(R.id.deleteIOT);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, NewIOT.class);
+                startActivity(intent);
+            }
+        });
+
+        deleteIOTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, DeleteIOT.class);
                 startActivity(intent);
             }
         });
