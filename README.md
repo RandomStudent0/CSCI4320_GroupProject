@@ -5,15 +5,15 @@ This is the android studio version of the java code.
 I am currently converting the java code to work with functions of android
 
 Some notes about android studio:
---Don't need to download an APK, you just need to run the emulator and press play
---Settings -> Live Edit -> Push Edits Automatically = Live edits
+--You don't need to download an APK, you just need to run the emulator and press play
+--Settings -> Live Edit -> Push Edits Automatically = Live edits 
 
 Device to use:
 Device: Pixel 7 pro
 OS: Android 7 
 
 
---How to add new pages:
+--How to add new pages--
 manifests file -> AndroidManifest.xml
    Go to the end of activity
         </activity>
@@ -39,7 +39,7 @@ public class MainIOTPage extends AppCompatActivity { //change MainIOTPage to you
     }
 }
 ```
---Layout folder -> New layout resource file -> It can be anything, for me, it is main_iot_page
+--Layout folder -> New layout resource file -> It can be anything, for me, it is main_iot_page--
    Note: do not capitalize file names because it will not show 
    This is just the default layout
 ```xml
@@ -51,7 +51,7 @@ public class MainIOTPage extends AppCompatActivity { //change MainIOTPage to you
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
---To make icons, buttons, switches, etc in the layouts folder not be on the top left even if you already dragged them.
+--To make icons, buttons, switches, etc in the layouts folder not be on the top left even if you already dragged them.--
 XML:
 To make sure the buttons are in the correct positions:
 ```xml
@@ -60,19 +60,19 @@ To make sure the buttons are in the correct positions:
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
 ```
---Example Skeleton of a button
+--Example Skeleton of a button--
 ```java
   public void onClickButton(View view) {
     //Enter code here
   }
 ```
 
-  --How to make feedback messages\
+  --How to make feedback messages--
 ```java
         Toast.makeText(this, "Feedback Here", Toast.LENGTH_SHORT).show();
 ```
 
---Higher level example of button
+--Higher level example of button--
 ```java
 public class MainActivity extends AppCompatActivity { //Always extend an activity to AppCompatActivity
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity { //Always extend an activit
             }
 ```
 
---The XML file of that button above
+--The XML file of that button above--
 ```xml
     <Button
         android:id="@+id/buttonLogin" //This is the id of the button 
