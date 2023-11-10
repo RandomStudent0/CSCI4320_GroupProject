@@ -20,15 +20,41 @@ public class MainIOTPage extends AppCompatActivity {
 
 package com.example.csci4320proj;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainIOTPage extends AppCompatActivity {
+    private static List<String> iotList = new ArrayList<>();
+    private Button newIOTButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_iot_page); // Set the new layout for this activity
         // Additional setup for the new activity
+
+
+        newIOTButton = findViewById(R.id.newIOT);
+
+
+        newIOTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, NewIOT.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

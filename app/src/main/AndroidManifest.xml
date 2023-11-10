@@ -25,6 +25,7 @@
         <!-- Add more pages here-->
         <activity android:name=".MainIOTPage"></activity>
         <activity android:name=".Register"></activity>
+        <activity android:name=".NewIOT"></activity>
 
     </application>
 
