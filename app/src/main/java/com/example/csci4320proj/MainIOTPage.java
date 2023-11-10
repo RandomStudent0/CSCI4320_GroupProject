@@ -12,3 +12,5 @@ public class MainIOTPage extends AppCompatActivity {
         // Additional setup for the new activity
     }
 }
+
+//SAVE THIS AS A TEMPLATE LATER FOR NEW PAGES

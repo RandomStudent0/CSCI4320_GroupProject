@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
 */
 
+
+//Another version
+/*
 //Remove the above later, it is code that works
 package com.example.csci4320proj;
 
@@ -85,54 +88,102 @@ public class MainActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.editTextPassword);
 
         registerButton = findViewById(R.id.buttonRegister);
-/*
+
         //REGISTER REMOVE
         // Set onClickListener for the login button
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        registerButton.setOnClickListener(new View.OnClickListener() {
             //What happens when the button is clicked
             @Override
             public void onClick(View view) {
-                String newU
-                String validPassword = "pass";
-                String enteredPassword = passwordEditText.getText().toString();
-
-                String validUsername = "user";
-                String enteredUsername = usernameEditText.getText().toString();
-
-                if (!users.containsKey(usernameEditText)) {
-                    Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
-                } else {
-                    if (users.get(usernameEditText).equals(passwordEditText)) {
-                        Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
-                        Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, Register.class);
+                        //Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
-                    }
-
-                }
             }
-        });*/
 
-        //REGISTER REMOIVE
-
+        });
 
         // Set onClickListener for the login button
         loginButton.setOnClickListener(new View.OnClickListener() {
             //What happens when the button is clicked
             @Override
             public void onClick(View view) {
-                if (!users.containsKey(usernameEditText)) {
-                    Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
-                } else {
-                    if (users.get(usernameEditText).equals(passwordEditText)) {
-                        Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
-                        Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-                        startActivity(intent);
-                    }
+                String inputUser = usernameEditText.getText().toString();
+                String inputPassword = passwordEditText.getText().toString();
 
+                if (users.containsKey(usernameEditText)) {
+                    String storedPassword = users.get(inputUser);
+                    if (inputPassword.equals(storedPassword)) {
+                        Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+
+                    }
                 }
+
             }
         });
 
     }
 }
+*/
 
+package com.example.csci4320proj;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.HashMap;
+
+public class MainActivity extends AppCompatActivity {
+    public static HashMap<String, String> users = new HashMap<String, String>();
+    private Button loginButton;
+    private Button registerButton;
+    private EditText passwordEditText;
+    private EditText usernameEditText;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        loginButton = findViewById(R.id.buttonLogin);
+        usernameEditText = findViewById(R.id.editTextUsername);
+        passwordEditText = findViewById(R.id.editTextPassword);
+
+        registerButton = findViewById(R.id.buttonRegister);
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Register.class);
+                startActivity(intent);
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String inputUser = usernameEditText.getText().toString();
+                String inputPassword = passwordEditText.getText().toString();
+
+                if (!users.containsKey(inputUser)) {
+                    Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (users.get(inputUser).equals(inputPassword)) {
+                        Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
+    }
+}
