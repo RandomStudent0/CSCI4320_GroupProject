@@ -42,32 +42,38 @@ public class MainIOTPage extends AppCompatActivity { //change MainIOTPage to you
 --Layout folder -> New layout resource file -> It can be anything, for me, it is main_iot_page
    Note: do not capitalize file names because it will not show 
    This is just the default layout
-
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
+```
 
 --To make icons, buttons, switches, etc in the layouts folder not be on the top left even if you already dragged them.
 XML:
 To make sure the buttons are in the correct positions:
+```xml
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-
+```
 --Example Skeleton of a button
+```java
   public void onClickButton(View view) {
     //Enter code here
   }
+```
 
-  --How to make feedback messages
+  --How to make feedback messages\
+```java
         Toast.makeText(this, "Feedback Here", Toast.LENGTH_SHORT).show();
+```
 
 --Higher level example of button
+```java
 public class MainActivity extends AppCompatActivity { //Always extend an activity to AppCompatActivity
 
     //Constructors for button and the input
@@ -93,8 +99,10 @@ public class MainActivity extends AppCompatActivity { //Always extend an activit
             public void onClick(View view) {
               //Implement code here
             }
+```
 
 --The XML file of that button above
+```xml
     <Button
         android:id="@+id/buttonLogin" //This is the id of the button 
         android:layout_width="wrap_content"
@@ -135,5 +143,5 @@ public class MainActivity extends AppCompatActivity { //Always extend an activit
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.518" />
-
+```
 
