@@ -18,8 +18,10 @@ Settings -> Live Edit -> Push Edits Automatically = Live edits
 ```
 
 **Device to use**
+```
 Device: Pixel 7 pro
 OS: Android 7 
+```
 
 **How to add new pages**
 manifests file -> AndroidManifest.xml
@@ -208,3 +210,16 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+**onClick important notes**
+```
+Make sure that you have the }); at the end of onClick methods because it will have an error if you do not
+```
+``java
+            public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, Register.class);
+                        //Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
+            }
+
+        });
+```
