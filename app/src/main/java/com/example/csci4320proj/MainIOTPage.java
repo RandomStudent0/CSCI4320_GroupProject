@@ -36,6 +36,7 @@ public class MainIOTPage extends AppCompatActivity {
     private static List<String> iotList = new ArrayList<>();
     private Button newIOTButton;
     private Button deleteIOTButton;
+    private Button editIOTButton;
 
 
 
@@ -48,6 +49,7 @@ public class MainIOTPage extends AppCompatActivity {
 
         newIOTButton = findViewById(R.id.newIOT);
         deleteIOTButton = findViewById(R.id.deleteIOT);
+        editIOTButton = findViewById(R.id.editIOTButton);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +63,14 @@ public class MainIOTPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, DeleteIOT.class);
+                startActivity(intent);
+            }
+        });
+
+        editIOTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, EditIOT.class);
                 startActivity(intent);
             }
         });
