@@ -4,6 +4,20 @@ Hi everyone,
 This is the android studio version of the java code.
 I am currently converting the java code to work with functions of android.
 
+**Current Progress**
+```
+CSCI4320IOTv1.apk Released
+Login and register buttons working. MainIOT page currently has no functions.
+```
+
+** How to run the .apk file**
+```
+Note: You need the ALL of the files from this android studio branch for the .apk to work on nox player.
+To reach the .apk file: YourCurrentPath\app\build\outputs\apk\debug 
+Now you should be able to drag that .apk file into nox player and run it. 
+Remember to rotate your screen on nox player.
+```
+
 **How to add files to Android Studio**
 ```
 1. Save the files in this current branch (Allen-Nguyen-AndroidStudio) into one of your folders
