@@ -2,12 +2,34 @@ CSCI4320 IOT Group Project
 
 Hi everyone,
 This is the android studio version of the java code.
-I am currently converting the java code to work with functions of android.
+I am currently converting the java code to work with functions of android. I am about 80% complete as of now.
 
 **Current Progress**
 ```
-CSCI4320IOTv1.apk Released
+v1 updates: Finished
 Login and register buttons working. MainIOT page currently has no functions.
+```
+```
+v2 updates: Finished
+MainIOT Page has some buttons working and functioning. Add/new/delete buttons work and their functions too.
+Has been tested for no errors.
+```
+```
+v3 updates: Expected later tonight or tomorrow.
+Functional list IOTs button and to its pages, and exit button
+```
+```
+v4 updates and beyond: 
+Main Goal: Each member has their own functional IOT page
+
+Database implementation for user/pass?
+Enter IOT button and make it functional
+Enable/Disable switch actually does something
+List of IOT
+Each member's IOT page
+Exit or back button for each page (Not sure if needed)
+Fix some variable names 
+Fix coding style and remove extra copies/templates for next pages/classes
 ```
 
 ** How to run the .apk file**
