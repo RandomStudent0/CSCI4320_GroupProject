@@ -28,6 +28,7 @@
         <activity android:name=".NewIOT"></activity>
         <activity android:name=".DeleteIOT"></activity>
         <activity android:name=".EditIOT"></activity>
+        <activity android:name=".ListIOT"></activity>
 
     </application>
 

@@ -29,7 +29,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainIOTPage extends AppCompatActivity {
@@ -37,8 +36,7 @@ public class MainIOTPage extends AppCompatActivity {
     private Button newIOTButton;
     private Button deleteIOTButton;
     private Button editIOTButton;
-
-
+    private Button listIOTButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +48,7 @@ public class MainIOTPage extends AppCompatActivity {
         newIOTButton = findViewById(R.id.newIOT);
         deleteIOTButton = findViewById(R.id.deleteIOT);
         editIOTButton = findViewById(R.id.editIOTButton);
+        listIOTButton = findViewById(R.id.listIOTButton);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,5 +74,12 @@ public class MainIOTPage extends AppCompatActivity {
             }
         });
 
+        listIOTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, ListIOT.class);
+                startActivity(intent);
+            }
+        });
     }
 }
