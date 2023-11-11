@@ -26,24 +26,29 @@ public class Register extends AppCompatActivity {
         registerButton = findViewById(R.id.buttonRegister);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
-            //What happens when the button is clicked
             @Override
             public void onClick(View view) {
                 String inputUser = editTextnewUsername.getText().toString();
                 String inputPassword = editTextnewPassword.getText().toString();
 
-                if(!MainActivity.users.containsKey(inputUser)) {
-                    MainActivity.users.put(inputUser, inputPassword);
-                    Toast.makeText(Register.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Register.this, MainActivity.class);
-                    startActivity(intent);
+                if (inputUser.isEmpty() && inputPassword.isEmpty()) {
+                    Toast.makeText(Register.this, "You need to enter a username and password.", Toast.LENGTH_SHORT).show();
+                } else if (inputUser.isEmpty()) {
+                    Toast.makeText(Register.this, "You need to enter a username.", Toast.LENGTH_SHORT).show();
+                } else if (inputPassword.isEmpty()) {
+                    Toast.makeText(Register.this, "You need to enter a password.", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(Register.this, "Username already exits", Toast.LENGTH_SHORT).show();
+                    if (!MainActivity.users.containsKey(inputUser)) {
+                        MainActivity.users.put(inputUser, inputPassword);
+                        Toast.makeText(Register.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Register.this, MainActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(Register.this, "Username already exists", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
-
         });
-
     }
 }
 
