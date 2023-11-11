@@ -19,7 +19,8 @@ Login and register buttons working. MainIOT page currently has no functions.
 ```
 ```
 v2 updates: Finished
-MainIOT Page has some buttons working and functioning. Add/new/delete buttons work and their functions too.
+MainIOT Page has some buttons working and functioning. 
+Add/new/delete buttons work and their functions too.
 Has been tested for no errors.
 ```
 ```
