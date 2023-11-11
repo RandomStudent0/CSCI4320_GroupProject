@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_SHORT).show();
                 } else {
                     if (users.get(inputUser).equals(inputPassword)) {
-                        Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Login Successful, Welcome " + inputUser, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, MainIOTPage.class);
                         startActivity(intent);
                     } else {
