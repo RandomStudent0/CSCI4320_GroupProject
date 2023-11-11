@@ -21,7 +21,6 @@ public class NewIOT extends MainIOTPage {
         setContentView(R.layout.new_iot); // Set the new layout for this activity
         // Additional setup for the new activity
 
-
         createIOTButton = findViewById(R.id.newIOTButton);
         editNewIOTName = findViewById(R.id.editNewIOTName);
 
@@ -39,9 +38,7 @@ public class NewIOT extends MainIOTPage {
                     Intent intent = new Intent(NewIOT.this, MainIOTPage.class);
                     startActivity(intent);
                 }
-
             }
         });
-
     }
 }

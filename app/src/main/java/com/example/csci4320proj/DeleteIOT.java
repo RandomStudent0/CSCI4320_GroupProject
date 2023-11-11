@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +19,6 @@ public class DeleteIOT extends MainIOTPage {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.delete_iot); // Set the new layout for this activity
         // Additional setup for the new activity
-
 
         deleteIOTButton = findViewById(R.id.deleteIOTButton);
         editDeleIOTName = findViewById(R.id.editDeleIOTName);
@@ -43,6 +40,5 @@ public class DeleteIOT extends MainIOTPage {
                 }
             }
         });
-
     }
 }
