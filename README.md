@@ -2,7 +2,15 @@ CSCI4320 IOT Group Project
 
 Hi everyone,
 This is the android studio version of the java code.
-I am currently converting the java code to work with functions of android. I am about 80% complete as of now.
+I am currently converting the java code to work with functions/visuals of android. I am about 95% complete as of now.
+
+```
+Brainstorm Idea: 
+Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Configure IOT
+Developer Side: Register -> Input database -> Login -> Validate from database 
+-> Check database for IOTs where each use has seperate ones -> Add/Edit/Delete/View IOTs ->
+Configure IOT -> Save settings to database
+``` 
 
 **Current Progress**
 ```
@@ -62,14 +70,15 @@ OS: Android 7
 ```
 
 **How to add new pages**
+```xml
 manifests file -> AndroidManifest.xml
    Go to the end of activity
         </activity>
 
         <!-- Add more pages here-->
         <activity android:name=".MainIOTPage"></activity> //Change .MainIOTPage to .YourPageName
-        
---New java file: MainIOTPage.java
+```		
+Create a new java file: MainIOTPage.java
    java -> yourpackagename -> new -> java
    ```java
 package com.example.csci4320proj;
@@ -252,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 Make sure that you have the }); at the end of onClick methods because it will have an error if you do not
 ```
-``java
+```java
             public void onClick(View view) {
                         Intent intent = new Intent(MainActivity.this, Register.class);
                         //Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
