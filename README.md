@@ -15,21 +15,23 @@ MainIOT Page has some buttons working and functioning. Add/new/delete buttons wo
 Has been tested for no errors.
 ```
 ```
-v3 updates: Expected later tonight or tomorrow.
-Functional list IOTs button and to its pages, and exit button
+v3 updates: Finished
+Functional list IOTs button and to its pages, exit button was not implemented
+because we have a back button on the androids already.
+Also fixed the register system so user cannot enter only username or only password.
 ```
 ```
 v4 updates and beyond: 
 Main Goal: Each member has their own functional IOT page
 
+Fix register system 
 Database implementation for user/pass?
 Enter IOT button and make it functional
 Enable/Disable switch actually does something
-List of IOT
 Each member's IOT page
-Exit or back button for each page (Not sure if needed)
 Fix some variable names 
 Fix coding style and remove extra copies/templates for next pages/classes
+Each user has their own IOTs and stored array lists to list the IOTs
 ```
 
 ** How to run the .apk file**
