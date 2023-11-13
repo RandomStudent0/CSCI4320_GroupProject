@@ -10,7 +10,6 @@ import android.widget.Toast;
 import java.util.List;
 
 public class DeleteIOT extends MainIOTPage {
-
     private Button deleteIOTButton;
     private EditText editDeleteIOTName;
     private Button backMainIOT;
@@ -37,7 +36,6 @@ public class DeleteIOT extends MainIOTPage {
                     startActivity(intent);
                 } else {
                     Toast.makeText(DeleteIOT.this, "IOT Name not found", Toast.LENGTH_SHORT).show();
-
                 }
             }
         });

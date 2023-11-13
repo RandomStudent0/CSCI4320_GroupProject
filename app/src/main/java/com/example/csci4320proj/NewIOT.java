@@ -14,6 +14,7 @@ public class NewIOT extends MainIOTPage {
     private Button newIOTButton;
     private EditText editNewIOTName;
     private Button backMainIOT;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -87,7 +87,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     public static HashMap<String, String> users = new HashMap<String, String>();
     private static List<String> iotList = new ArrayList<>();
-
     public static List<String> getIotList() {
         return iotList;
     }
@@ -104,10 +103,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.buttonLogin);
         usernameEditText = findViewById(R.id.usernameEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
-
         registerButton = findViewById(R.id.buttonRegister);
-
-
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
