@@ -8,10 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.HashMap;
-
 public class Register extends AppCompatActivity {
-    public static HashMap<String, String> users = new HashMap<String, String>();
+
     private Button registerButton;
     private EditText editTextnewUsername;
     private EditText editTextnewPassword;
