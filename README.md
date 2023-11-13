@@ -2,7 +2,7 @@ CSCI4320 IOT Group Project
 
 Hi everyone,
 This is the android studio version of the java code.
-I am currently converting the java code to work with functions/visuals of android. I am about 95% complete as of now.
+This is the conversion of the java code we made to the functions/visuals of android.
 
 ```
 Brainstorm Idea: 
@@ -30,7 +30,11 @@ because we have a back button on the androids already.
 Also fixed the register system so user cannot enter only username or only password.
 ```
 ```
-v4 updates and beyond: 
+v4 updates: Finished
+Added a back page and back buttons to each page except the Login page.
+```
+```
+v5 updates and beyond: 
 Main Goal: Each member has their own functional IOT page
 
 Fix register system 
@@ -270,4 +274,19 @@ Make sure that you have the }); at the end of onClick methods because it will ha
             }
 
         });
+```
+
+**Basic skeleton of a button**    
+```java
+private Button nameOfButton; //Under public class declaration
+
+
+	nameOfButton = findViewById(R.id.backLogin); //Under setContentView(R.layout.layoutname); layoutname is in res/layout/layoutName.xml
+	nameOfButton.setOnClickListener(new View.OnClickListener() {
+		@Override
+		public void onClick(View view) {
+			Intent intent = new Intent(currentClassName.this, nextClassName.class);
+			startActivity(intent);
+		}
+	}); //Do not forget it to end it exactly like this!
 ```
