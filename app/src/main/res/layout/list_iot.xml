@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Your TextView and EditText elements remain unchanged -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -38,7 +37,6 @@
             android:layout_marginEnd="16dp" />
     </LinearLayout>
 
-    <!-- Adjusted Button -->
     <Button
         android:id="@+id/backMainIOT"
         android:layout_width="wrap_content"
@@ -47,6 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="16dp" /> <!-- Adds margin to the right -->
+        android:layout_marginEnd="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

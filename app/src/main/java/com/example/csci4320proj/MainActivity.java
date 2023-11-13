@@ -71,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
 }
 */
 
+/*
+        newIOTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, NewIOT.class);
+                startActivity(intent);
+            }
+        });
+ */
 package com.example.csci4320proj;
 
 import androidx.appcompat.app.AppCompatActivity;
