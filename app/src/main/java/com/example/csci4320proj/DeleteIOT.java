@@ -12,7 +12,7 @@ import java.util.List;
 public class DeleteIOT extends MainIOTPage {
 
     private Button deleteIOTButton;
-    private EditText editDeleIOTName;
+    private EditText editDeleteIOTName;
     private Button backMainIOT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +21,14 @@ public class DeleteIOT extends MainIOTPage {
         // Additional setup for the new activity
 
         deleteIOTButton = findViewById(R.id.deleteIOTButton);
-        editDeleIOTName = findViewById(R.id.editDeleIOTName);
+        editDeleteIOTName = findViewById(R.id.editDeleteIOTName);
         backMainIOT = findViewById(R.id.backMainIOT);
 
         deleteIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 List<String> iotList = MainActivity.getIotList();
-                String iotName = editDeleIOTName.getText().toString();
+                String iotName = editDeleteIOTName.getText().toString();
 
                 if (iotList.contains(iotName)) {
                     iotList.remove(iotName);
