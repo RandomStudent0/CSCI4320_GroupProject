@@ -15,6 +15,7 @@ public class NewIOT extends MainIOTPage {
 
     private Button createIOTButton;
     private EditText editNewIOTName;
+    private Button backMainIOT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,7 @@ public class NewIOT extends MainIOTPage {
 
         createIOTButton = findViewById(R.id.newIOTButton);
         editNewIOTName = findViewById(R.id.editNewIOTName);
-
+        backMainIOT = findViewById(R.id.backMainIOT);
         createIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +39,14 @@ public class NewIOT extends MainIOTPage {
                     Intent intent = new Intent(NewIOT.this, MainIOTPage.class);
                     startActivity(intent);
                 }
+            }
+        });
+
+        backMainIOT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewIOT.this, MainIOTPage.class);
+                startActivity(intent);
             }
         });
     }

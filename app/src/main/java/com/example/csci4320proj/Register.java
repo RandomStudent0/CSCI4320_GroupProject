@@ -15,6 +15,7 @@ public class Register extends AppCompatActivity {
     private Button registerButton;
     private EditText editTextnewUsername;
     private EditText editTextnewPassword;
+    private Button backLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class Register extends AppCompatActivity {
         editTextnewUsername = findViewById(R.id.editTextnewUsername);
         editTextnewPassword = findViewById(R.id.editTextnewPassword);
         registerButton = findViewById(R.id.buttonRegister);
+        backLogin = findViewById(R.id.backLogin);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +49,14 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this, "Username already exists", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+
+        backLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

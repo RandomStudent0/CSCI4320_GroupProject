@@ -156,13 +156,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); //It starts the app here
 
         loginButton = findViewById(R.id.buttonLogin);
         usernameEditText = findViewById(R.id.editTextUsername);
         passwordEditText = findViewById(R.id.editTextPassword);
 
         registerButton = findViewById(R.id.buttonRegister);
+
+
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override

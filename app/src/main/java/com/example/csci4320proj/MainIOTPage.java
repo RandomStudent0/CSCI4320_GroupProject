@@ -37,6 +37,7 @@ public class MainIOTPage extends AppCompatActivity {
     private Button deleteIOTButton;
     private Button editIOTButton;
     private Button listIOTButton;
+    private Button logOutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MainIOTPage extends AppCompatActivity {
         deleteIOTButton = findViewById(R.id.deleteIOT);
         editIOTButton = findViewById(R.id.editIOTButton);
         listIOTButton = findViewById(R.id.listIOTButton);
+        logOutButton = findViewById(R.id.logOutButton);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +81,16 @@ public class MainIOTPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, ListIOT.class);
                 startActivity(intent);
+            }
+        });
+
+        logOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, MainActivity.class);
+                startActivity(intent);
+                Toast.makeText(MainIOTPage.this, "You have successfully logged out!", Toast.LENGTH_SHORT).show();
+                //Implement log out database here
             }
         });
     }

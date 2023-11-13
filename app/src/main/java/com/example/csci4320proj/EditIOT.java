@@ -75,6 +75,7 @@ import java.util.List;
 public class EditIOT extends MainIOTPage {
     private Button editIOTButton;
     private EditText editIOTName;
+    private Button backMainIOT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +84,7 @@ public class EditIOT extends MainIOTPage {
 
         editIOTButton = findViewById(R.id.editIOTButton);
         editIOTName = findViewById(R.id.editIOTName);
+        backMainIOT = findViewById(R.id.backMainIOT);
 
         editIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +115,14 @@ public class EditIOT extends MainIOTPage {
                 } else {
                     Toast.makeText(EditIOT.this, "IOT Name not found", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        backMainIOT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EditIOT.this, MainIOTPage.class);
+                startActivity(intent);
             }
         });
     }

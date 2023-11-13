@@ -14,6 +14,7 @@ public class DeleteIOT extends MainIOTPage {
 
     private Button deleteIOTButton;
     private EditText editDeleIOTName;
+    private Button backMainIOT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class DeleteIOT extends MainIOTPage {
 
         deleteIOTButton = findViewById(R.id.deleteIOTButton);
         editDeleIOTName = findViewById(R.id.editDeleIOTName);
+        backMainIOT = findViewById(R.id.backMainIOT);
 
         deleteIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,14 @@ public class DeleteIOT extends MainIOTPage {
                     Toast.makeText(DeleteIOT.this, "IOT Name not found", Toast.LENGTH_SHORT).show();
 
                 }
+            }
+        });
+
+        backMainIOT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DeleteIOT.this, MainIOTPage.class);
+                startActivity(intent);
             }
         });
     }
