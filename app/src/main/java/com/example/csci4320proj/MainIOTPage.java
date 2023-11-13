@@ -46,7 +46,7 @@ public class MainIOTPage extends AppCompatActivity {
         // Additional setup for the new activity
 
 
-        newIOTButton = findViewById(R.id.newIOT);
+        newIOTButton = findViewById(R.id.newIOTButton);
         deleteIOTButton = findViewById(R.id.deleteIOT);
         editIOTButton = findViewById(R.id.editIOTButton);
         listIOTButton = findViewById(R.id.listIOTButton);

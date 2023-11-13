@@ -24,7 +24,7 @@ public class ListIOT extends MainIOTPage {
         setContentView(R.layout.list_iot); // Set the new layout for this activity
         // Additional setup for the new activity
 
-            listIOTs = findViewById(R.id.iotsList);
+            listIOTs = findViewById(R.id.listIOTs);
             backMainIOT = findViewById(R.id.backMainIOT);
 
 

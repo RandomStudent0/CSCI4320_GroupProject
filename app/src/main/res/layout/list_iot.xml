@@ -23,7 +23,7 @@
             android:layout_marginTop="16dp" />
 
         <EditText
-            android:id="@+id/iotsList"
+            android:id="@+id/listIOTs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F0F0F0"

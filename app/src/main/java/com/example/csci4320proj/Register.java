@@ -24,7 +24,7 @@ public class Register extends AppCompatActivity {
 
         editTextnewUsername = findViewById(R.id.editTextnewUsername);
         editTextnewPassword = findViewById(R.id.editTextnewPassword);
-        registerButton = findViewById(R.id.buttonRegister);
+        registerButton = findViewById(R.id.registerButton);
         backLogin = findViewById(R.id.backLogin);
 
         registerButton.setOnClickListener(new View.OnClickListener() {

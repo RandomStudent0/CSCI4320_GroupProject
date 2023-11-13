@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NewIOT extends MainIOTPage {
 
-    private Button createIOTButton;
+    private Button newIOTButton;
     private EditText editNewIOTName;
     private Button backMainIOT;
     @Override
@@ -22,10 +22,10 @@ public class NewIOT extends MainIOTPage {
         setContentView(R.layout.new_iot); // Set the new layout for this activity
         // Additional setup for the new activity
 
-        createIOTButton = findViewById(R.id.newIOTButton);
+        newIOTButton = findViewById(R.id.newIOTButton);
         editNewIOTName = findViewById(R.id.editNewIOTName);
         backMainIOT = findViewById(R.id.backMainIOT);
-        createIOTButton.setOnClickListener(new View.OnClickListener() {
+        newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 List<String> iotList = MainActivity.getIotList();
