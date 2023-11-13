@@ -1,9 +1,7 @@
 /*
 package com.example.csci4320proj;
 
-
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainIOTPage extends AppCompatActivity {
@@ -25,11 +23,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainIOTPage extends AppCompatActivity {
     private static List<String> iotList = new ArrayList<>();
