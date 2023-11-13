@@ -159,8 +159,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main); //It starts the app here
 
         loginButton = findViewById(R.id.buttonLogin);
-        usernameEditText = findViewById(R.id.editTextUsername);
-        passwordEditText = findViewById(R.id.editTextPassword);
+        usernameEditText = findViewById(R.id.usernameEditText);
+        passwordEditText = findViewById(R.id.passwordEditText);
 
         registerButton = findViewById(R.id.buttonRegister);
 
