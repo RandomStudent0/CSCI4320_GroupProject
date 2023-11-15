@@ -11,6 +11,7 @@ public class ListIOT extends MainIOTPage {
     private EditText listIOTs;
     private Button backMainIOT;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class ListIOT extends MainIOTPage {
 
             listIOTs = findViewById(R.id.listIOTs);
             backMainIOT = findViewById(R.id.backMainIOT);
+
 
             // Displays the IOT list in the page
             StringBuilder iotString = new StringBuilder();

@@ -15,6 +15,7 @@ public class MainIOTPage extends AppCompatActivity {
 
 */
 //The above is the template for a new page. Do not delete it until we turn the project in.
+
 package com.example.csci4320proj;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +40,7 @@ public class MainIOTPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_iot_page); // Set the new layout for this activity
         // Additional setup for the new activity
+
 
         newIOTButton = findViewById(R.id.newIOTButton);
         deleteIOTButton = findViewById(R.id.deleteIOT);

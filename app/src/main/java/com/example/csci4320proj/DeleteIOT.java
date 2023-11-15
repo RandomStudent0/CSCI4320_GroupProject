@@ -10,8 +10,9 @@ import android.widget.Toast;
 import java.util.List;
 
 public class DeleteIOT extends MainIOTPage {
+
     private Button deleteIOTButton;
-    private EditText editDeleteIOTName;
+    private EditText editDeleIOTName;
     private Button backMainIOT;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +21,14 @@ public class DeleteIOT extends MainIOTPage {
         // Additional setup for the new activity
 
         deleteIOTButton = findViewById(R.id.deleteIOTButton);
-        editDeleteIOTName = findViewById(R.id.editDeleteIOTName);
+        editDeleIOTName = findViewById(R.id.editDeleIOTName);
         backMainIOT = findViewById(R.id.backMainIOT);
 
         deleteIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 List<String> iotList = MainActivity.getIotList();
-                String iotName = editDeleteIOTName.getText().toString();
+                String iotName = editDeleIOTName.getText().toString();
 
                 if (iotList.contains(iotName)) {
                     iotList.remove(iotName);
@@ -36,6 +37,7 @@ public class DeleteIOT extends MainIOTPage {
                     startActivity(intent);
                 } else {
                     Toast.makeText(DeleteIOT.this, "IOT Name not found", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });

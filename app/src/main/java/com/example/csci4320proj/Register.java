@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
+
     private Button registerButton;
     private EditText editTextnewUsername;
     private EditText editTextnewPassword;
