@@ -10,6 +10,8 @@ Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Conf
 Developer Side: Register -> Input database -> Login -> Validate from database 
 -> Check database for IOTs where each use has seperate ones -> Add/Edit/Delete/View IOTs ->
 Configure IOT -> Save settings to database
+--Database idea scrapped because of time.
+--Seperate IOTs and multiple IOTs per user was also scrapped because of time
 ``` 
 
 **Current Progress**
@@ -34,7 +36,15 @@ v4 updates: Finished
 Added a back page and back buttons to each page except the Login page.
 ```
 ```
-v5 updates and beyond: 
+v5 updates: Not Finished
+enterIOT button functional, camera IOT Functional
+enterIOT button enters into a list of IOTs to pick from (our 4 IOTs)
+That page will also have a back button
+Camera IOT can record and playback videos
+Camera IOT can also switch between camera 1 and 2
+```
+```
+v6 updates and beyond: 
 Main Goal: Each member has their own functional IOT page
 
 Fix register system 
