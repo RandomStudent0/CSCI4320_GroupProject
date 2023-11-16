@@ -6,12 +6,12 @@ This is the conversion of the java code we made to the functions/visuals of andr
 
 ```
 Brainstorm Idea: 
-Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Configure IOT
+~~Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Configure IOT
 Developer Side: Register -> Input database -> Login -> Validate from database 
 -> Check database for IOTs where each use has seperate ones -> Add/Edit/Delete/View IOTs ->
-Configure IOT -> Save settings to database
---Database idea scrapped because of time.
---Seperate IOTs and multiple IOTs per user was also scrapped because of time
+Configure IOT -> Save settings to database~~
+-Database idea scrapped because of time.
+-Seperate IOTs and multiple IOTs per user was also scrapped because of time.
 ``` 
 
 **Current Progress**
@@ -51,13 +51,12 @@ Each member has their own functional IOT page (1/4 Completed)
 
 Sub Goals:
 Enable/disable switches does something for notifications/IOTs
---Database implementation for user/pass?--
+~~Database implementation for user/pass?~~
 List IOTs either has a drag drop down or cards
 Enter IOT button and make it functional
---Enable/Disable switch actually does something--
 Finish Each member's IOT page
 Fix coding style and remove extra copies/templates for next pages/classes
---Each user has their own IOTs and stored array lists to list the IOTs--
+~~Each user has their own IOTs and stored array lists to list the IOTs~~
 ```
 
 ** How to run the .apk file**
