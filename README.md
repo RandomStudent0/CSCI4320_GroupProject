@@ -36,25 +36,28 @@ v4 updates: Finished
 Added a back page and back buttons to each page except the Login page.
 ```
 ```
-v5 updates: Not Finished
-enterIOT button functional, camera IOT Functional
-enterIOT button enters into a list of IOTs to pick from (our 4 IOTs)
-That page will also have a back button
+v5 updates: Finished
+Camera button functional with the IOT
+Moved back button to top left of list iot page
 Camera IOT can record and playback videos
 Camera IOT can also switch between camera 1 and 2
+Camera IOT now has two images
 ```
 ```
 v6 updates and beyond: 
-Main Goal: Each member has their own functional IOT page
+Main Goal: 
+Each member has their own functional IOT page (1/4 Completed)
 
-Fix register system 
-Database implementation for user/pass?
+
+Sub Goals:
+Enable/disable switches does something for notifications/IOTs
+--Database implementation for user/pass?--
+List IOTs either has a drag drop down or cards
 Enter IOT button and make it functional
-Enable/Disable switch actually does something
-Each member's IOT page
-Fix some variable names 
+--Enable/Disable switch actually does something--
+Finish Each member's IOT page
 Fix coding style and remove extra copies/templates for next pages/classes
-Each user has their own IOTs and stored array lists to list the IOTs
+--Each user has their own IOTs and stored array lists to list the IOTs--
 ```
 
 ** How to run the .apk file**
