@@ -15,7 +15,6 @@ public class MainIOTPage extends AppCompatActivity {
 
 */
 //The above is the template for a new page. Do not delete it until we turn the project in.
-
 package com.example.csci4320proj;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +32,7 @@ public class MainIOTPage extends AppCompatActivity {
     private Button deleteIOTButton;
     private Button editIOTButton;
     private Button listIOTButton;
+    private Button enterCameraIOT;
     private Button logOutButton;
 
     @Override
@@ -41,11 +41,11 @@ public class MainIOTPage extends AppCompatActivity {
         setContentView(R.layout.main_iot_page); // Set the new layout for this activity
         // Additional setup for the new activity
 
-
         newIOTButton = findViewById(R.id.newIOTButton);
         deleteIOTButton = findViewById(R.id.deleteIOT);
         editIOTButton = findViewById(R.id.editIOTButton);
         listIOTButton = findViewById(R.id.listIOTButton);
+        enterCameraIOT = findViewById(R.id.enterCameraIOT);
         logOutButton = findViewById(R.id.logOutButton);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +76,14 @@ public class MainIOTPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, ListIOT.class);
+                startActivity(intent);
+            }
+        });
+
+        enterCameraIOT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainIOTPage.this, CameraMainActivity.class);
                 startActivity(intent);
             }
         });
