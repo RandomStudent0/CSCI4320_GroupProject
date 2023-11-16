@@ -115,10 +115,10 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/nameIOTLater2"
+        android:id="@+id/enterARGlassesIOT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter other IOT 1"
+        android:text="AR Glasses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintLeft_toLeftOf="parent"
