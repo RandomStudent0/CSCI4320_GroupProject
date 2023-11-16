@@ -36,6 +36,7 @@
         <activity android:name=".Camera2Main"></activity>
         <activity android:name=".Camera2Play"></activity>
         <activity android:name=".Camera2Rec"></activity>
+        <activity android:name=".RobotVacMain"></activity>
 
     </application>
 

@@ -33,9 +33,11 @@ public class MainIOTPage extends AppCompatActivity {
     private Button editIOTButton;
     private Button listIOTButton;
     private Button enterCameraIOT;
+    private Button enterRobotVacIOT;
     //Uncomment these when the IOTs are finished
+
+
     /*
-    private Button enterRobotIOT;
     private Button enterARGlassesIOT;
     private Button enterNameIOT;
 
@@ -53,7 +55,7 @@ public class MainIOTPage extends AppCompatActivity {
         editIOTButton = findViewById(R.id.editIOTButton);
         listIOTButton = findViewById(R.id.listIOTButton);
         enterCameraIOT = findViewById(R.id.enterCameraIOT);
-        //enterRobotVacIOT = findViewById(R.id.enterRobotVacIOT);
+        enterRobotVacIOT = findViewById(R.id.enterRobotVacIOT);
         //enter enterARGlassesIOT = findViewById(R.id.enterARGlassesIOT);
         //enter enterNameIOT = findViewById(R.id.enterNameIOT);
         logOutButton = findViewById(R.id.logOutButton);
@@ -100,15 +102,15 @@ public class MainIOTPage extends AppCompatActivity {
 
         //Below is the template for new IOTs, you just change the activity class name in the
         //Intent to your own, and you should be able to link your new IOT there.
-        /*
+
                 enterRobotVacIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainIOTPage.this, RobotMainActivity.class);
+                Intent intent = new Intent(MainIOTPage.this, RobotVacMain.class);
                 startActivity(intent);
             }
         });
-
+/*
                 enterARGlassesIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
