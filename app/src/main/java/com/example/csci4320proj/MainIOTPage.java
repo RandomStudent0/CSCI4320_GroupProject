@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,14 +51,19 @@ public class MainIOTPage extends AppCompatActivity {
         setContentView(R.layout.main_iot_page); // Set the new layout for this activity
         // Additional setup for the new activity
 
+        //ArrayList buttons
         newIOTButton = findViewById(R.id.newIOTButton);
         deleteIOTButton = findViewById(R.id.deleteIOT);
         editIOTButton = findViewById(R.id.editIOTButton);
         listIOTButton = findViewById(R.id.listIOTButton);
+
+        //Enter IOTs
         enterCameraIOT = findViewById(R.id.enterCameraIOT);
         enterRobotVacIOT = findViewById(R.id.enterRobotVacIOT);
         //enter enterARGlassesIOT = findViewById(R.id.enterARGlassesIOT);
         //enter enterNameIOT = findViewById(R.id.enterNameIOT);
+
+        //Logout button
         logOutButton = findViewById(R.id.logOutButton);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +109,7 @@ public class MainIOTPage extends AppCompatActivity {
         //Below is the template for new IOTs, you just change the activity class name in the
         //Intent to your own, and you should be able to link your new IOT there.
 
-                enterRobotVacIOT.setOnClickListener(new View.OnClickListener() {
+        enterRobotVacIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, RobotVacMain.class);
@@ -111,7 +117,7 @@ public class MainIOTPage extends AppCompatActivity {
             }
         });
 /*
-                enterARGlassesIOT.setOnClickListener(new View.OnClickListener() {
+        enterARGlassesIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, yourMainActivity.class);
@@ -119,17 +125,15 @@ public class MainIOTPage extends AppCompatActivity {
             }
         });
 
-                enterNameIOT.setOnClickListener(new View.OnClickListener() {
+         enterNameIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, yourMainActivity.class);
                 startActivity(intent);
             }
         });
-
 
          */
-
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
