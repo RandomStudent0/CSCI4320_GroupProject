@@ -44,7 +44,24 @@ Camera IOT can also switch between camera 1 and 2
 Camera IOT now has two images
 ```
 ```
-v6 updates and beyond: 
+v6 updates: Semi Finished
+Removed camera 1 and 2 button on main pages
+Added camera 1 and 2 text on top of their pages
+
+Robot Vacuum IOT created
+Created 3 room buttons to clean
+Each room button starts a cleaning status
+Added suction mode
+Added an off mode to turn all modes off
+Added a back button
+
+Todo:
+Make code easier to read/better organization
+Find room images to replace default ones
+Organize buttons better 
+```
+```
+v7 updates and beyond: 
 Main Goal: 
 Each member has their own functional IOT page (1/4 Completed)
 
@@ -293,12 +310,39 @@ Make sure that you have the }); at the end of onClick methods because it will ha
 private Button nameOfButton; //Under public class declaration
 
 
-	nameOfButton = findViewById(R.id.backLogin); //Under setContentView(R.layout.layoutname); layoutname is in res/layout/layoutName.xml
+	nameOfButton = findViewById(R.id.layoutname); //Under setContentView(R.layout.layoutname); layoutname is in res/layout/layoutName.xml
 	nameOfButton.setOnClickListener(new View.OnClickListener() {
 		@Override
 		public void onClick(View view) {
+		/* Goes to new page
 			Intent intent = new Intent(currentClassName.this, nextClassName.class);
 			startActivity(intent);
+		*/
 		}
 	}); //Do not forget it to end it exactly like this!
 ```
+
+**Basic skeleton of a switch**
+```java
+private Switch nameofSwitch; //Under public class declaration
+
+	nameofSwitch = findViewById(R.id.layoutname); //Under setContentView(R.layout.layoutname); layoutname is in res/layout/layoutName.xml
+	
+	
+        nameofSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                //if true
+                if(b) {
+                    //set text visibility to visable and other switch to false
+                    text.setVisibility(View.VISIBLE); //Text in xml file's visibility
+                    sw1.setChecked(false);
+                } else {
+				//if false or else
+				//set text1 and text2 visibility invisible 
+                    text1.setVisibility(View.INVISIBLE);
+                    text2.setVisibility(View.INVISIBLE);
+
+                }
+            }
+        });
