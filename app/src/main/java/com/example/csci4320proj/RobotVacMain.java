@@ -14,16 +14,16 @@ public class RobotVacMain extends AppCompatActivity {
     private Button chargeButton;
     private TextView chargeText;
 
-    private Button room1Button;
+    private Button mBedRoomButton;
 
-    private Button room2Button;
-    private Button room3Button;
+    private Button bedRoomButton;
+    private Button livingRoomButton;
 
 
 
-    private TextView room1Text;
-    private TextView room2Text;
-    private TextView room3Text;
+    private TextView mBedRoomText;
+    private TextView bedRoomText;
+    private TextView livingRoomText;
 
     private TextView suctionQuiet;
     private TextView suctionMedium;
@@ -47,15 +47,14 @@ public class RobotVacMain extends AppCompatActivity {
         chargeButton = findViewById(R.id.chargeButton);
         chargeText = findViewById(R.id.chargeText);
 
-        room1Button = findViewById(R.id.room1Button);
+        mBedRoomButton = findViewById(R.id.mBedRoomButton);
+        bedRoomButton = findViewById(R.id.bedRoomButton);
+        livingRoomButton = findViewById(R.id.livingRoomButton);
 
-        room2Button = findViewById(R.id.room2Button);
-        room3Button = findViewById(R.id.room3Button);
 
-
-        room1Text = findViewById(R.id.room1Text);
-        room2Text = findViewById(R.id.room2Text);
-        room3Text = findViewById(R.id.room3Text);
+        mBedRoomText = findViewById(R.id.mBedRoomText);
+        bedRoomText = findViewById(R.id.bedRoomText);
+        livingRoomText = findViewById(R.id.livingRoomText);
 
         quietButton = findViewById(R.id.quietButton);
         mediumButton = findViewById(R.id.mediumButton);
@@ -75,65 +74,65 @@ public class RobotVacMain extends AppCompatActivity {
             public void onClick(View view) {
                 if (chargeText.getVisibility() == View.INVISIBLE) {
                     chargeText.setVisibility(View.VISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        room1Button.setOnClickListener(new View.OnClickListener() {
+        mBedRoomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (room1Text.getVisibility() == View.INVISIBLE) {
-                    room1Text.setVisibility(View.VISIBLE);
+                if (mBedRoomText.getVisibility() == View.INVISIBLE) {
+                    mBedRoomText.setVisibility(View.VISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        room2Button.setOnClickListener(new View.OnClickListener() {
+        bedRoomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (room2Text.getVisibility() == View.INVISIBLE) {
-                    room2Text.setVisibility(View.VISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
+                if (bedRoomText.getVisibility() == View.INVISIBLE) {
+                    bedRoomText.setVisibility(View.VISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        room3Button.setOnClickListener(new View.OnClickListener() {
+        livingRoomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (room3Text.getVisibility() == View.INVISIBLE) {
-                    room3Text.setVisibility(View.VISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
+                if (livingRoomText.getVisibility() == View.INVISIBLE) {
+                    livingRoomText.setVisibility(View.VISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    room1Text.setVisibility(View.INVISIBLE);
-                    room2Text.setVisibility(View.INVISIBLE);
-                    room3Text.setVisibility(View.INVISIBLE);
+                    mBedRoomText.setVisibility(View.INVISIBLE);
+                    bedRoomText.setVisibility(View.INVISIBLE);
+                    livingRoomText.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -189,9 +188,9 @@ public class RobotVacMain extends AppCompatActivity {
                 suctionMaximum.setVisibility(View.INVISIBLE);
                 suctionQuiet.setVisibility(View.INVISIBLE);
                 suctionMedium.setVisibility(View.INVISIBLE);
-                room1Text.setVisibility(View.INVISIBLE);
-                room2Text.setVisibility(View.INVISIBLE);
-                room3Text.setVisibility(View.INVISIBLE);
+                mBedRoomText.setVisibility(View.INVISIBLE);
+                bedRoomText.setVisibility(View.INVISIBLE);
+                livingRoomText.setVisibility(View.INVISIBLE);
                 chargeText.setVisibility(View.INVISIBLE);
             }
         });
