@@ -5,7 +5,6 @@ Alena Welch
 Allen Nguyen
 Carlos Reyes
 Christopher Ta
-
 ```
 
 ```
@@ -15,15 +14,16 @@ We converted the bare java code into android UI code.
 
 ```
 Brainstorm Idea: 
+Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT 
+-> Configure IOT -> Use IOT
 
-~~Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Configure IOT
-Developer Side: Register -> Input database -> Login -> Validate from database 
--> Check database for IOTs where each use has seperate ones -> Add/Edit/Delete/View IOTs ->
-Configure IOT -> Save settings to database~~
+Developer Side: Create a hashmap for the user -> Validate user 
+-> Input array for Add/Edit/Delete/View IOTs -> Pull arrays 
+-> Edit IOT Configurations for the user. 
+
 -Database idea scrapped because of time.
 -Seperate IOTs and multiple IOTs per user was also scrapped because of time.
 ``` 
-
 **Current Progress**
 ```
 v0 start: Finished
@@ -82,9 +82,7 @@ Each member has their own functional IOT page (2/4 Completed)
 Enter IOT button and make it functional
 Sub Goals: N/A
 Far Future: Not Finished
-Each user has their own IOTs and stored array lists to list the IOTs
-Database implementation for user/pass
-
+Database implementation for account/IOTs
 ```
 
 **How to run the apk file**
@@ -107,6 +105,7 @@ Device: Pixel 7 Pro
 OS: Android 7 
 Emulator: Nox Player/Android Studio
 ```
+
 ```
 Below is a collection of notes/code snippets to use for the project.
 ```
