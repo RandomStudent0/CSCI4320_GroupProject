@@ -374,8 +374,7 @@ nameOfItem.getVisibility() which means if it is invisible or not
 view.INVISIBLE/VISIBLE which means the type of view it is
 setVisibility(view.INVISIBLE/VISIBLE) set the view 
 ```
-```
-java
+```java
 
 	private Button chargeButton;
 
@@ -399,8 +398,7 @@ java
 Open the drawable folder, drag and drop the image there.
 Then, where the commented out line is, it "@drawable/yourIMGName"
 ```
-```
-xml
+```xml
     <ImageView
         android:id="@+id/master_bedroomIMG"
         android:layout_width="169dp"
