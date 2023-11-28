@@ -352,3 +352,64 @@ private Switch nameofSwitch; //Under public class declaration
                 }
             }
         });
+
+**How to hide texts/buttons/switches**
+```
+In the xml file, create a android:visibility="invisible" attribute.
+```
+    <TextView
+        android:id="@+id/chargeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="32dp"
+        android:text="Charging"
+        <!-- android:visibility="invisible" -->
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+```
+Then, there are if statements, where it is 
+nameOfItem.getVisibility() which means if it is invisible or not
+view.INVISIBLE/VISIBLE which means the type of view it is
+setVisibility(view.INVISIBLE/VISIBLE) set the view 
+```
+```java
+
+	private Button chargeButton;
+
+        chargeButton = findViewById(R.id.chargeButton);
+
+        chargeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (chargeText.getVisibility() == View.INVISIBLE) {
+                    chargeText.setVisibility(View.VISIBLE);
+                } else {
+                    chargeText.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+```
+
+**How to add images**
+```
+Open the drawable folder, drag and drop the image there.
+Then, where the commented out line is, it "@drawable/yourIMGName"
+```
+```xml
+    <ImageView
+        android:id="@+id/master_bedroomIMG"
+        android:layout_width="169dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        android:contentDescription="master bedroom image"
+        <!-- android:src="@drawable/master_bed_room" -->
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+```
+
+
