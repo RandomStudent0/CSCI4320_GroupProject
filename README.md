@@ -69,7 +69,6 @@ Added suction mode
 Added an off mode to turn all modes off
 Added a back button
 Each room part renamed to fit the room names
-Each
 ```
 ```
 v7 updates: Finished
