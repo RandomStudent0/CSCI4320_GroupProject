@@ -369,13 +369,14 @@ In the xml file, create a android:visibility="invisible" attribute.
         app:layout_constraintTop_toTopOf="parent" />
 
 ```
+```
 Then, there are if statements, where it is 
 nameOfItem.getVisibility() which means if it is invisible or not
 view.INVISIBLE/VISIBLE which means the type of view it is
 setVisibility(view.INVISIBLE/VISIBLE) set the view 
 ```
-```java
 
+```java
 	private Button chargeButton;
 
         chargeButton = findViewById(R.id.chargeButton);
