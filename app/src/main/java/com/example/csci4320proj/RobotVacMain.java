@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,22 +45,22 @@ public class RobotVacMain extends AppCompatActivity {
         chargeButton = findViewById(R.id.chargeButton);
         chargeText = findViewById(R.id.chargeText);
 
-        mBedRoomButton = findViewById(R.id.mBedRoomButton);
-        bedRoomButton = findViewById(R.id.bedRoomButton);
-        livingRoomButton = findViewById(R.id.livingRoomButton);
+        mBedRoomButton = findViewById(R.id.zonesButton);
+        bedRoomButton = findViewById(R.id.otherButton);
+        livingRoomButton = findViewById(R.id.cutButton);
 
 
         mBedRoomText = findViewById(R.id.mBedRoomText);
-        bedRoomText = findViewById(R.id.bedRoomText);
+        bedRoomText = findViewById(R.id.offText);
         livingRoomText = findViewById(R.id.livingRoomText);
 
-        quietButton = findViewById(R.id.quietButton);
+        quietButton = findViewById(R.id.lowButton);
         mediumButton = findViewById(R.id.mediumButton);
         maximumButton = findViewById(R.id.maximumButton);
 
-        suctionQuiet = findViewById(R.id.suctionQuiet);
-        suctionMedium = findViewById(R.id.suctionMedium);
-        suctionMaximum = findViewById(R.id.suctionMaximum);
+        suctionQuiet = findViewById(R.id.CutLow);
+        suctionMedium = findViewById(R.id.cutMedium);
+        suctionMaximum = findViewById(R.id.cutMaximum);
 
         offButton = findViewById(R.id.offButton);
 
