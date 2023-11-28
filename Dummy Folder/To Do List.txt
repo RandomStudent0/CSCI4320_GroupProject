@@ -1,0 +1,5 @@
+To Do List:
+- Add 'AR_Glasses' java file to main manefest 
+- Add files to correct locations
+- Connect button in main IOT page to 'AR_Glasses'
+- Replace the place holder images with the supplied images

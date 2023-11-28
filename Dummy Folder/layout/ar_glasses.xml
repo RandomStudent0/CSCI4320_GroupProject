@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/Device2Image"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="348dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Device2Name"
+        android:layout_width="181dp"
+        android:layout_height="60dp"
+        android:text="Name of Device"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <ImageButton
+        android:id="@+id/Device2ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <Switch
+        android:id="@+id/Device2Switch"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:text="Enable"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <ImageView
+        android:id="@+id/Device1Image"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="219dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Device1Name"
+        android:layout_width="181dp"
+        android:layout_height="60dp"
+        android:text="Name of Device"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Switch
+        android:id="@+id/Device1Switch"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:text="Enable"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageButton
+        android:id="@+id/Device1ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="306dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Connected Devices"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
