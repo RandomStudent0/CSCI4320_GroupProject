@@ -1,11 +1,13 @@
-CSCI4320 IOT Group Project
+**CSCI4320 IOT Group Project**
 
-Hi everyone,
-This is the android studio version of the java code.
-This is the conversion of the java code we made to the functions/visuals of android.
+```
+This is the android studio version of the bare java code.
+We converted the bare java code into android UI code.
+```
 
 ```
 Brainstorm Idea: 
+
 ~~Client Side: Register -> Login -> Add/Edit/Delete/View IOTs -> Enter IOT -> Configure IOT
 Developer Side: Register -> Input database -> Login -> Validate from database 
 -> Check database for IOTs where each use has seperate ones -> Add/Edit/Delete/View IOTs ->
@@ -15,6 +17,11 @@ Configure IOT -> Save settings to database~~
 ``` 
 
 **Current Progress**
+```
+v0 start: Finished
+Java skeleton for login, register, and functions for IOTs.
+Seperate files for ideas of how the app should work.
+```
 ```
 v1 updates: Finished
 Login and register buttons working. MainIOT page currently has no functions.
@@ -44,36 +51,32 @@ Camera IOT can also switch between camera 1 and 2
 Camera IOT now has two images
 ```
 ```
-v6 updates: Semi Finished
+v6 updates: Finished
 Removed camera 1 and 2 button on main pages
 Added camera 1 and 2 text on top of their pages
-
 Robot Vacuum IOT created
 Created 3 room buttons to clean
 Each room button starts a cleaning status
 Added suction mode
 Added an off mode to turn all modes off
 Added a back button
-
-Todo:
-Make code easier to read/better organization
-Find room images to replace default ones
-Organize buttons better 
+Each room part renamed to fit the room names
+Each
 ```
 ```
-v7 updates and beyond: 
+v7 updates: Finished
+Enable/disable switches functional for notifications/IOTs
+```
+```
+v8 updates and beyond: 
 Main Goal: 
-Each member has their own functional IOT page (1/4 Completed)
-
-
-Sub Goals:
-Enable/disable switches does something for notifications/IOTs
-~~Database implementation for user/pass?~~
-List IOTs either has a drag drop down or cards
+Each member has their own functional IOT page (2/4 Completed)
 Enter IOT button and make it functional
-Finish Each member's IOT page
-Fix coding style and remove extra copies/templates for next pages/classes
-~~Each user has their own IOTs and stored array lists to list the IOTs~~
+Sub Goals: N/A
+Far Future: Not Finished
+Each user has their own IOTs and stored array lists to list the IOTs
+Database implementation for user/pass
+
 ```
 
 ** How to run the .apk file**
@@ -89,7 +92,6 @@ Remember to rotate your screen on nox player.
 1. Save the files in this current branch (Allen-Nguyen-AndroidStudio) into one of your folders
 2. Open Android Studio and open a new project and pick that new folder from above
 ```
-
 
 **Android Studio use app**
 ```
