@@ -79,12 +79,12 @@ Database implementation for user/pass
 
 ```
 
-** How to run the .apk file**
+**How to run the apk file**
 ```
 Note: You need the ALL of the files from this android studio branch for the .apk to work on nox player.
 To reach the .apk file: YourCurrentPath\app\build\outputs\apk\debug 
 Now you should be able to drag that .apk file into nox player and run it. 
-Remember to rotate your screen on nox player.
+Remember to rotate your screen to portrait mode on nox player.
 ```
 
 **How to add files to Android Studio**
@@ -93,16 +93,13 @@ Remember to rotate your screen on nox player.
 2. Open Android Studio and open a new project and pick that new folder from above
 ```
 
-**Android Studio use app**
-```
-You don't need to download an APK, you just need to run the emulator and press play
-Settings -> Live Edit -> Push Edits Automatically = Live edits 
-```
-
 **Device to use**
 ```
 Device: Pixel 7 pro
 OS: Android 7 
+```
+```
+Below is a collection of notes/code snippets to use for the project.
 ```
 
 **How to add new pages**
@@ -295,7 +292,7 @@ public class MainActivity extends AppCompatActivity {
 
 **onClick important notes**
 ```
-Make sure that you have the }); at the end of onClick methods because it will have an error if you do not
+Make sure that you have the }); at the end of onClick methods because it will have an error if you do not.
 ```
 ```java
             public void onClick(View view) {
