@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,14 +36,13 @@ public class MainIOTPage extends AppCompatActivity {
     private Button listIOTButton;
     private Button enterCameraIOT;
     private Button enterRobotVacIOT;
+    private Button enterARGlassesIOT;
+    private Button enteriLawnMowerIOT;
+
+    private Switch enDisIOTSwitch;
+    private Switch enDisIOTNotiSwitch;
     //Uncomment these when the IOTs are finished
 
-
-    /*
-    private Button enterARGlassesIOT;
-    private Button enterNameIOT;
-
-     */
     private Button logOutButton;
 
     @Override
@@ -60,11 +60,15 @@ public class MainIOTPage extends AppCompatActivity {
         //Enter IOTs
         enterCameraIOT = findViewById(R.id.enterCameraIOT);
         enterRobotVacIOT = findViewById(R.id.enterRobotVacIOT);
-        //enter enterARGlassesIOT = findViewById(R.id.enterARGlassesIOT);
-        //enter enterNameIOT = findViewById(R.id.enterNameIOT);
+        enterARGlassesIOT = findViewById(R.id.enterARGlassesIOT);
+        enteriLawnMowerIOT = findViewById(R.id.enteriLawnMowerIOT);
 
         //Logout button
         logOutButton = findViewById(R.id.logOutButton);
+
+        //Switches
+        enDisIOTSwitch = findViewById(R.id.enDisIOTSwitch);
+        enDisIOTNotiSwitch = findViewById(R.id.enDisIOTNotiSwitch);
 
         newIOTButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,7 +120,7 @@ public class MainIOTPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-/*
+/* UNCOMMENT WHEN FINISHED THE TWO IOTS
         enterARGlassesIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,7 +129,7 @@ public class MainIOTPage extends AppCompatActivity {
             }
         });
 
-         enterNameIOT.setOnClickListener(new View.OnClickListener() {
+         enteriLawnMowerIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainIOTPage.this, yourMainActivity.class);
@@ -140,8 +144,42 @@ public class MainIOTPage extends AppCompatActivity {
                 Intent intent = new Intent(MainIOTPage.this, MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(MainIOTPage.this, "You have successfully logged out!", Toast.LENGTH_SHORT).show();
-                //Implement log out database here
             }
         });
+
+
+
+        enDisIOTSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                //if true
+                if(b) {
+                    //
+                    Toast.makeText(MainIOTPage.this, "Enabled IOTs", Toast.LENGTH_SHORT).show();
+                    enDisIOTSwitch.setChecked(true);
+                } else {
+                    //if false or else
+                    Toast.makeText(MainIOTPage.this, "Disabled IOTs", Toast.LENGTH_SHORT).show();
+                    enDisIOTSwitch.setChecked(false);
+                }
+            }
+        });
+
+        enDisIOTNotiSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                //enable notis
+                if(b) {
+                    //
+                    Toast.makeText(MainIOTPage.this, "Enabled Notifications", Toast.LENGTH_SHORT).show();
+                    enDisIOTNotiSwitch.setChecked(true);
+                } else {
+                    //disable notis
+                    Toast.makeText(MainIOTPage.this, "Disabled Notifications", Toast.LENGTH_SHORT).show();
+                    enDisIOTNotiSwitch.setChecked(false);
+                }
+            }
+        });
+
     }
 }
