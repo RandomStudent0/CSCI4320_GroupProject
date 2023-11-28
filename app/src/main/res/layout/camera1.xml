@@ -7,17 +7,17 @@
     android:layout_height="wrap_content"
     android:layout_gravity="top|start">
 
+
     <TextView
         android:id="@+id/viewCam1Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"
         android:text="Camera 1"
         android:textSize="100px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView2"
