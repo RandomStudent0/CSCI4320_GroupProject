@@ -1,4 +1,12 @@
-**CSCI4320 IOT Group Project**
+**CSCI4320 IOT Group Project Fall 2023**
+```
+Group Members:
+Alena Welch
+Allen Nguyen
+Carlos Reyes
+Christopher Ta
+
+```
 
 ```
 This is the android studio version of the bare java code.
@@ -95,8 +103,9 @@ Remember to rotate your screen to portrait mode on nox player.
 
 **Device to use**
 ```
-Device: Pixel 7 pro
+Device: Pixel 7 Pro
 OS: Android 7 
+Emulator: Nox Player/Android Studio
 ```
 ```
 Below is a collection of notes/code snippets to use for the project.
