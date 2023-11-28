@@ -37,6 +37,7 @@
         <activity android:name=".Camera2Play"></activity>
         <activity android:name=".Camera2Rec"></activity>
         <activity android:name=".RobotVacMain"></activity>
+        <activity android:name=".iLawnMowerMain"></activity>
 
     </application>
 

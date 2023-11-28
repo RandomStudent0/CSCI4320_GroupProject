@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,6 +6,18 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="top|start">
+
+        <ImageView
+            android:id="@+id/master_bedroomIMG2"
+            android:layout_width="169dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="224dp"
+            android:contentDescription="master bedroom image"
+            android:src="@drawable/geofenc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/CutLow"
@@ -134,13 +145,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/mBedRoomText"
+            android:id="@+id/zonesText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="324dp"
             android:layout_marginTop="32dp"
             android:text="Mowing"
             android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/otherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="32dp"
+            android:visibility="invisible"
+            android:text="other"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="32dp"
+            android:visibility="invisible"
+            android:text="Cutting"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -203,15 +237,8 @@
             android:layout_marginTop="704dp"
             android:text="Cut Mode"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" /><![CDATA[
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="159dp"
-            android:layout_height="136dp"
-            app:srcCompat="@drawable/geofenc"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="233dp"
-            tools:ignore="MissingConstraints" />
         -->
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

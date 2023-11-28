@@ -12,20 +12,24 @@ public class iLawnMowerMain extends AppCompatActivity {
     private Button chargeButton;
     private TextView chargeText;
 
-    private Button mBedRoomButton;
+    private Button zonesButton;
 
-    private Button bedRoomButton;
-    private Button livingRoomButton;
+    private Button otherButton;
+    private Button cutButton;
 
 
 
-    private TextView mBedRoomText;
-    private TextView bedRoomText;
-    private TextView livingRoomText;
+    private TextView zonesText;
+    private TextView otherText;
+    private TextView cutText;
 
     private TextView cutLow;
     private TextView cutMedium;
     private TextView cutMaximum;
+
+    private Button lowButton;
+    private Button mediumButton;
+    private Button maximumButton;
 
 
     private Button backButton;
@@ -38,27 +42,27 @@ public class iLawnMowerMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.robot_vac); // Set the new layout for this activity
+        setContentView(R.layout.i_lawn_mower); // Set the new layout for this activity
 
         chargeButton = findViewById(R.id.chargeButton);
         chargeText = findViewById(R.id.chargeText);
 
-        mBedRoomButton = findViewById(R.id.zonesButton);
-        bedRoomButton = findViewById(R.id.otherButton);
-        livingRoomButton = findViewById(R.id.cutButton);
+        zonesButton = findViewById(R.id.zonesButton);
+        otherButton = findViewById(R.id.otherButton);
+        cutButton = findViewById(R.id.cutButton);
 
 
-        mBedRoomText = findViewById(R.id.mBedRoomText);
-        bedRoomText = findViewById(R.id.offText);
-        livingRoomText = findViewById(R.id.livingRoomText);
+        zonesText = findViewById(R.id.zonesText);
+        otherText = findViewById(R.id.otherText);
+        cutText = findViewById(R.id.cutText);
 
-        quietButton = findViewById(R.id.lowButton);
+        lowButton = findViewById(R.id.lowButton);
         mediumButton = findViewById(R.id.mediumButton);
         maximumButton = findViewById(R.id.maximumButton);
 
-        suctionQuiet = findViewById(R.id.CutLow);
-        suctionMedium = findViewById(R.id.cutMedium);
-        suctionMaximum = findViewById(R.id.cutMaximum);
+        cutLow = findViewById(R.id.CutLow);
+        cutMedium = findViewById(R.id.cutMedium);
+        cutMaximum = findViewById(R.id.cutMaximum);
 
         offButton = findViewById(R.id.offButton);
 
@@ -70,80 +74,80 @@ public class iLawnMowerMain extends AppCompatActivity {
             public void onClick(View view) {
                 if (chargeText.getVisibility() == View.INVISIBLE) {
                     chargeText.setVisibility(View.VISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        mBedRoomButton.setOnClickListener(new View.OnClickListener() {
+        zonesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (mBedRoomText.getVisibility() == View.INVISIBLE) {
-                    mBedRoomText.setVisibility(View.VISIBLE);
+                if (zonesText.getVisibility() == View.INVISIBLE) {
+                    zonesText.setVisibility(View.VISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        bedRoomButton.setOnClickListener(new View.OnClickListener() {
+        otherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (bedRoomText.getVisibility() == View.INVISIBLE) {
-                    bedRoomText.setVisibility(View.VISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
+                if (otherText.getVisibility() == View.INVISIBLE) {
+                    otherText.setVisibility(View.VISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        livingRoomButton.setOnClickListener(new View.OnClickListener() {
+        cutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (livingRoomText.getVisibility() == View.INVISIBLE) {
-                    livingRoomText.setVisibility(View.VISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
+                if (cutText.getVisibility() == View.INVISIBLE) {
+                    cutText.setVisibility(View.VISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
                     chargeText.setVisibility(View.INVISIBLE);
                 } else {
                     chargeText.setVisibility(View.INVISIBLE);
-                    mBedRoomText.setVisibility(View.INVISIBLE);
-                    bedRoomText.setVisibility(View.INVISIBLE);
-                    livingRoomText.setVisibility(View.INVISIBLE);
+                    zonesText.setVisibility(View.INVISIBLE);
+                    otherText.setVisibility(View.INVISIBLE);
+                    cutText.setVisibility(View.INVISIBLE);
                 }
             }
         });
 
-        quietButton.setOnClickListener(new View.OnClickListener() {
+        lowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (suctionQuiet.getVisibility() == View.INVISIBLE) {
-                    suctionQuiet.setVisibility(View.VISIBLE);
-                    suctionMedium.setVisibility(View.INVISIBLE);
-                    suctionMaximum.setVisibility(View.INVISIBLE);
+                if (cutLow.getVisibility() == View.INVISIBLE) {
+                    cutLow.setVisibility(View.VISIBLE);
+                    cutMedium.setVisibility(View.INVISIBLE);
+                    cutMaximum.setVisibility(View.INVISIBLE);
                 } else {
-                    suctionQuiet.setVisibility(View.INVISIBLE);
-                    suctionMedium.setVisibility(View.INVISIBLE);
-                    suctionMaximum.setVisibility(View.INVISIBLE);
+                    cutLow.setVisibility(View.INVISIBLE);
+                    cutMedium.setVisibility(View.INVISIBLE);
+                    cutMaximum.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -151,14 +155,14 @@ public class iLawnMowerMain extends AppCompatActivity {
         mediumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (suctionMedium.getVisibility() == View.INVISIBLE) {
-                    suctionMedium.setVisibility(View.VISIBLE);
-                    suctionQuiet.setVisibility(View.INVISIBLE);
-                    suctionMaximum.setVisibility(View.INVISIBLE);
+                if (cutMedium.getVisibility() == View.INVISIBLE) {
+                    cutMedium.setVisibility(View.VISIBLE);
+                    cutLow.setVisibility(View.INVISIBLE);
+                    cutMaximum.setVisibility(View.INVISIBLE);
                 } else {
-                    suctionQuiet.setVisibility(View.INVISIBLE);
-                    suctionMedium.setVisibility(View.INVISIBLE);
-                    suctionMaximum.setVisibility(View.INVISIBLE);
+                    cutLow.setVisibility(View.INVISIBLE);
+                    cutMedium.setVisibility(View.INVISIBLE);
+                    cutMaximum.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -166,14 +170,14 @@ public class iLawnMowerMain extends AppCompatActivity {
         maximumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (suctionMaximum.getVisibility() == View.INVISIBLE) {
-                    suctionMaximum.setVisibility(View.VISIBLE);
-                    suctionQuiet.setVisibility(View.INVISIBLE);
-                    suctionMedium.setVisibility(View.INVISIBLE);
+                if (cutMaximum.getVisibility() == View.INVISIBLE) {
+                    cutMaximum.setVisibility(View.VISIBLE);
+                    cutLow.setVisibility(View.INVISIBLE);
+                    cutMedium.setVisibility(View.INVISIBLE);
                 } else {
-                    suctionQuiet.setVisibility(View.INVISIBLE);
-                    suctionMedium.setVisibility(View.INVISIBLE);
-                    suctionMaximum.setVisibility(View.INVISIBLE);
+                    cutLow.setVisibility(View.INVISIBLE);
+                    cutMedium.setVisibility(View.INVISIBLE);
+                    cutMaximum.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -181,12 +185,12 @@ public class iLawnMowerMain extends AppCompatActivity {
         offButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                suctionMaximum.setVisibility(View.INVISIBLE);
-                suctionQuiet.setVisibility(View.INVISIBLE);
-                suctionMedium.setVisibility(View.INVISIBLE);
-                mBedRoomText.setVisibility(View.INVISIBLE);
-                bedRoomText.setVisibility(View.INVISIBLE);
-                livingRoomText.setVisibility(View.INVISIBLE);
+                cutMaximum.setVisibility(View.INVISIBLE);
+                cutLow.setVisibility(View.INVISIBLE);
+                cutMedium.setVisibility(View.INVISIBLE);
+                zonesText.setVisibility(View.INVISIBLE);
+                otherText.setVisibility(View.INVISIBLE);
+                cutText.setVisibility(View.INVISIBLE);
                 chargeText.setVisibility(View.INVISIBLE);
             }
         });
