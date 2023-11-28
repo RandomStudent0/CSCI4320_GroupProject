@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RobotVacMain extends AppCompatActivity {
+public class iLawnMowerMain extends AppCompatActivity {
     private Button chargeButton;
     private TextView chargeText;
 
@@ -23,12 +23,10 @@ public class RobotVacMain extends AppCompatActivity {
     private TextView bedRoomText;
     private TextView livingRoomText;
 
-    private TextView suctionQuiet;
-    private TextView suctionMedium;
-    private TextView suctionMaximum;
-    private Button quietButton;
-    private Button mediumButton;
-    private Button maximumButton;
+    private TextView cutLow;
+    private TextView cutMedium;
+    private TextView cutMaximum;
+
 
     private Button backButton;
 
@@ -198,7 +196,7 @@ public class RobotVacMain extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RobotVacMain.this, MainIOTPage.class);
+                Intent intent = new Intent(iLawnMowerMain.this, MainIOTPage.class);
                 startActivity(intent);
             }
         });

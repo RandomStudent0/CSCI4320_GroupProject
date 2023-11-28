@@ -128,16 +128,18 @@ public class MainIOTPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
+
 
          enteriLawnMowerIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainIOTPage.this, yourMainActivity.class);
+                Intent intent = new Intent(MainIOTPage.this, iLawnMowerMain.class);
                 startActivity(intent);
             }
         });
 
-         */
+
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
