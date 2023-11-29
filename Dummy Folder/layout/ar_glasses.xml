@@ -15,7 +15,7 @@
         android:layout_marginTop="192dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ar" />
+        android:src="@drawable/ar" />
 
     <ImageView
         android:id="@+id/Device2Ima77ge"
@@ -25,7 +25,7 @@
         android:layout_marginTop="340dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/gear" />
+        android:src="@drawable/gear" />
 
     <TextView
         android:id="@+id/Device2Name"
@@ -75,7 +75,7 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Device2Switch"
-        tools:src="@drawable/ar" />
+        android:src="@drawable/ar" />
 
     <ImageView
         android:id="@+id/Device242Image"
@@ -85,7 +85,7 @@
         android:layout_marginTop="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/gear" />
+        android:src="@drawable/gear" />
 
     <ImageButton
         android:id="@+id/Device2ImageButton"
