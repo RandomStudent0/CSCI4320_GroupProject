@@ -161,8 +161,7 @@
             android:layout_marginStart="324dp"
             android:layout_marginTop="32dp"
             android:visibility="invisible"
-            android:text="other"
-
+            android:text="Other"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -174,7 +173,6 @@
             android:layout_marginTop="32dp"
             android:visibility="invisible"
             android:text="Cutting"
-
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -237,8 +235,5 @@
             android:layout_marginTop="704dp"
             android:text="Cut Mode"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" /><![CDATA[
-
-        -->
-]]>
+            app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
