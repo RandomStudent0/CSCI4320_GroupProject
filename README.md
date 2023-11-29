@@ -75,11 +75,13 @@ v7 updates: Finished
 Enable/disable switches functional for notifications/IOTs
 ```
 ```
-v8 updates and beyond: 
-Main Goal: 
-Each member has their own functional IOT page (2/4 Completed)
-Enter IOT button and make it functional
-Sub Goals: N/A
+v8 updates: Finished
+Added iLawn Mower IOT
+Added AR Glasses IOT
+Linked the remaining two IOT buttons to work
+```
+```
+v9 updates and beyond: 
 Far Future: Not Finished
 Database implementation for account/IOTs
 ```
