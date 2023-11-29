@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,83 +11,123 @@
         android:id="@+id/Device2Image"
         android:layout_width="92dp"
         android:layout_height="83dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="348dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ar" />
+
+    <ImageView
+        android:id="@+id/Device2Ima77ge"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/gear" />
 
     <TextView
         android:id="@+id/Device2Name"
-        android:layout_width="181dp"
-        android:layout_height="60dp"
+        android:layout_width="185dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Name of Device"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="348dp" />
+        app:layout_constraintStart_toEndOf="@+id/Device2Image"
+        app:layout_constraintTop_toTopOf="@+id/Device2Image" />
+
+    <Switch
+        android:id="@+id/Device1Switch"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Enable"
+        app:layout_constraintStart_toEndOf="@+id/Device1Image"
+        app:layout_constraintTop_toBottomOf="@+id/Device1Name" />
+
+    <TextView
+        android:id="@+id/Device1Name"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name of Device"
+        app:layout_constraintStart_toEndOf="@+id/Device1Image"
+        app:layout_constraintTop_toTopOf="@+id/Device1Image" />
+
+    <Switch
+        android:id="@+id/Device2Switch"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Enable"
+        app:layout_constraintStart_toEndOf="@+id/Device2Image"
+        app:layout_constraintTop_toBottomOf="@+id/Device2Name" />
+
+    <ImageView
+        android:id="@+id/Device1Image"
+        android:layout_width="92dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Device2Switch"
+        tools:src="@drawable/ar" />
+
+    <ImageView
+        android:id="@+id/Device242Image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/gear" />
 
     <ImageButton
         android:id="@+id/Device2ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="348dp" />
-
-    <Switch
-        android:id="@+id/Device2Switch"
-        android:layout_width="125dp"
-        android:layout_height="33dp"
-        android:text="Enable"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="407dp" />
-
-    <ImageView
-        android:id="@+id/Device1Image"
-        android:layout_width="92dp"
-        android:layout_height="83dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="219dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/Device1Name"
-        android:layout_width="181dp"
-        android:layout_height="60dp"
-        android:text="Name of Device"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="219dp" />
-
-    <Switch
-        android:id="@+id/Device1Switch"
-        android:layout_width="125dp"
-        android:layout_height="33dp"
-        android:text="Enable"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="278dp" />
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintStart_toEndOf="@+id/Device2Name"
+        app:layout_constraintTop_toTopOf="@+id/Device2Name" />
 
     <ImageButton
         android:id="@+id/Device1ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="219dp" />
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="219dp"
+        app:layout_constraintStart_toEndOf="@+id/Device1Switch"
+        app:layout_constraintTop_toTopOf="@+id/Device1Switch" />
 
     <Button
         android:id="@+id/BackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="306dp"
         android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="text"
         android:text="Connected Devices"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="115dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
