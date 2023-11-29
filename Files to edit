@@ -1,0 +1,5 @@
+src -> main -> java (The actual java codes)
+src -> main -> res -> drawable (Images for your IOT)
+src -> main -> res -> layout (The actual pages)
+src -> main -> java -> AndroidManifest.xml (The link to the pages)
+These are the most important folders
