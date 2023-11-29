@@ -120,16 +120,14 @@ public class MainIOTPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-/* UNCOMMENT WHEN FINISHED THE TWO IOTS
+
         enterARGlassesIOT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainIOTPage.this, yourMainActivity.class);
+                Intent intent = new Intent(MainIOTPage.this, AR_Glasses.class);
                 startActivity(intent);
             }
         });
-        */
-
 
          enteriLawnMowerIOT.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,7 +137,6 @@ public class MainIOTPage extends AppCompatActivity {
             }
         });
 
-
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -148,7 +145,6 @@ public class MainIOTPage extends AppCompatActivity {
                 Toast.makeText(MainIOTPage.this, "You have successfully logged out!", Toast.LENGTH_SHORT).show();
             }
         });
-
 
 
         enDisIOTSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

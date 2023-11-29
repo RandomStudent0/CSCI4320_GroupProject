@@ -38,6 +38,7 @@
         <activity android:name=".Camera2Rec"></activity>
         <activity android:name=".RobotVacMain"></activity>
         <activity android:name=".iLawnMowerMain"></activity>
+        <activity android:name=".AR_Glasses"></activity>
 
     </application>
 
